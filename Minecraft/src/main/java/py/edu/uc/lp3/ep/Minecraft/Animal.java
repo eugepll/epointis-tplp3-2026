@@ -2,18 +2,18 @@ package py.edu.uc.lp3.ep.Minecraft;
 
 
 /**
- * Representa criaturas pacíficas o neutrales en el mundo.
+ * Representa criaturas pacificas o neutrales en el mundo.
  */
 public class Animal extends PersonajeNoJugable {
     private boolean domable;
     private boolean pacifico;
-   // private boolean deambula;
+    private boolean deambulan;
 
     public Animal(float vida, String nombre, float altura, boolean crecen, boolean domable, boolean pacifico, boolean deambula) {
         super(vida, nombre, altura, crecen);
         this.domable = domable;
         this.pacifico = pacifico;
-       //this.deambula = deambula;
+        this.deambulan = deambula;
     }
 
     // Getters y Setters
@@ -33,22 +33,11 @@ public class Animal extends PersonajeNoJugable {
         this.pacifico = pacifico;
     }
 
-/* 
-    @Override
-    public boolean isDeambula() {
-        return deambula;
+    public boolean isDeambulan() {
+        return deambulan;
     }
 
-    @Override
-    public void setDeambula(boolean deambula) {
-        this.deambula = deambula;
+    public void setDeambulan(boolean deambulan) {
+        this.deambulan = deambulan;
     }
-
-    @Override
-    public void deambular() {
-        if (deambula) {
-            System.out.println("El animal " + getNombre() + " camina tranquilamente.");
-        }
-    } */
 }
-   
