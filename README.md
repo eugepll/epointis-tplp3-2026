@@ -26,6 +26,7 @@ classDiagram
     }
     EntidadViva <|-- PersonajeJugable
     EntidadViva <|-- Monstruo
+```
 
 ## Cambios de Sobrecarga y Sobrescritura
 - Sobrecarga (Overloading): Se implementaron múltiples constructores en las clases del dominio (por ejemplo, un constructor simple y un constructor sobrecargado que recibe nombre, vida y altura), lo que permite instanciar objetos con diferentes cantidades de datos asegurando un estado legal.
