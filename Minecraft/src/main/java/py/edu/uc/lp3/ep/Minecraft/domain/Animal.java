@@ -1,5 +1,4 @@
-package py.edu.uc.lp3.ep.Minecraft;
-
+package py.edu.uc.lp3.ep.Minecraft.domain;
 
 /**
  * Representa criaturas pacificas o neutrales en el mundo.

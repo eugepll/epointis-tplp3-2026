@@ -1,4 +1,4 @@
-package py.edu.uc.lp3.ep.Minecraft;
+package py.edu.uc.lp3.ep.Minecraft.domain;
 
 /**
  * Clase base abstracta para todas las entidades autónomas (NPCs).

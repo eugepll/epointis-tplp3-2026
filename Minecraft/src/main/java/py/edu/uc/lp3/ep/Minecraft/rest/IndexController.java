@@ -1,4 +1,4 @@
-package py.edu.uc.lp3.ep.Minecraft;
+package py.edu.uc.lp3.ep.Minecraft.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

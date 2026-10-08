@@ -1,4 +1,4 @@
-package py.edu.uc.lp3.ep.Minecraft;
+package py.edu.uc.lp3.ep.Minecraft.domain;
 
 public class EntidadViva {
     private float vida;

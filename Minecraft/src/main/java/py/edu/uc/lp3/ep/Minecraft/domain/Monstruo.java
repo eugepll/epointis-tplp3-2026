@@ -1,4 +1,4 @@
-package py.edu.uc.lp3.ep.Minecraft;
+package py.edu.uc.lp3.ep.Minecraft.domain;
 
 public class Monstruo extends PersonajeNoJugable {
     public Monstruo(float vida, String nombre, float altura, boolean crecen) {

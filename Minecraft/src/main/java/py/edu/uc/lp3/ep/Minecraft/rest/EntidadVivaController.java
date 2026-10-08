@@ -1,8 +1,10 @@
-package py.edu.uc.lp3.ep.Minecraft;
+package py.edu.uc.lp3.ep.Minecraft.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import py.edu.uc.lp3.ep.Minecraft.domain.EntidadViva;
 
 @RestController
 public class EntidadVivaController {
