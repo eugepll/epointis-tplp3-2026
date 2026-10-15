@@ -1,44 +1,33 @@
 package py.edu.uc.lp3.ep.Minecraft.domain;
 
-public class Monstruo extends PersonajeNoJugable {
-    public Monstruo(float vida, String nombre, float altura, boolean crecen) {
-        super(vida, nombre, altura, crecen);
-        //TODO Auto-generated constructor stub
-    }
-
+public class Monstruo extends PersonajeNoJugable implements Interaccionable {
     private boolean hostil;
     private boolean puedeEstarArmado;
     private boolean deambulan;
 
-    /* 
-    public Monstruo(float vida, String nombre, float altura, boolean noControlable, boolean crecen, boolean hostil, boolean puedeEstarArmado, boolean deambulan) {
-        //super(vida, nombre, altura, noControlable, crecen);
-        this.hostil = hostil;
-        this.puedeEstarArmado = puedeEstarArmado;
-        this.deambulan = deambulan;
-    }
-*/
-    public boolean isHostil() {
-        return hostil;
-    }
-
-    public void setHostil(boolean hostil) {
+    // Constructor unificado con todos los atributos necesarios
+    public Monstruo(float vida, String nombre, float altura, boolean crecen, boolean hostil) {
+        super(vida, nombre, altura, crecen);
         this.hostil = hostil;
     }
 
-    public boolean isPuedeEstarArmado() {
-        return puedeEstarArmado;
+    @Override
+    public String describirInteraccion() {
+        return "¡Cuidado! El monstruo " + getNombre() + " se prepara para atacar.";
     }
 
-    public void setPuedeEstarArmado(boolean puedeEstarArmado) {
-        this.puedeEstarArmado = puedeEstarArmado;
+    @Override
+    public String obtenerTipoInteraccion() {
+        return "Interacción de Combate / Hostil";
     }
 
-    public boolean isDeambulan() {
-        return deambulan;
-    }
+    // Getters y Setters
+    public boolean isHostil() { return hostil; }
+    public void setHostil(boolean hostil) { this.hostil = hostil; }
 
-    public void setDeambulan(boolean deambulan) {
-        this.deambulan = deambulan;
-    }
+    public boolean isPuedeEstarArmado() { return puedeEstarArmado; }
+    public void setPuedeEstarArmado(boolean puedeEstarArmado) { this.puedeEstarArmado = puedeEstarArmado; }
+
+    public boolean isDeambulan() { return deambulan; }
+    public void setDeambulan(boolean deambulan) { this.deambulan = deambulan; }
 }

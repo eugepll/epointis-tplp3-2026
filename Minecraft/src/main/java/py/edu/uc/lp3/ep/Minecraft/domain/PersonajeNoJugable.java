@@ -8,7 +8,7 @@ public abstract class PersonajeNoJugable extends EntidadViva {
     private boolean crecen;
 
     public PersonajeNoJugable(float vida, String nombre, float altura, boolean crecen) {
-        super(vida, nombre, altura);
+        super(vida, nombre, altura, true);
         this.controlable = false; // Por defecto no es controlado por un jugador
         this.crecen = crecen;
     }

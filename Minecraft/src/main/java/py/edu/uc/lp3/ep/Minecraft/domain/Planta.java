@@ -1,5 +1,4 @@
 package py.edu.uc.lp3.ep.Minecraft.domain;
-
 /**
  * Representa elementos estáticos de flora.
  */

@@ -12,9 +12,9 @@ public class PersonajeJugable extends EntidadViva {
     private List<String> inventario; // Reemplazar 'String' por la clase 'Item' de tu juego
 
     public PersonajeJugable(float vida, String nombre, float altura, float hambre) {
-        super(vida, nombre, altura);
+        super(vida, nombre, altura, true); // <--- Aquí pasamos los 4 argumentos requeridos por EntidadViva
         this.hambre = hambre;
-        this.controlable = true; // Por defecto es controlado por el jugador
+        this.controlable = true;
         this.inventario = new ArrayList<>();
     }
 
